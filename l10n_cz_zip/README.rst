@@ -17,7 +17,7 @@ Czechia - City from ZIP
     :target: http://www.gnu.org/licenses/lgpl-3.0-standalone.html
     :alt: License: LGPL-3
 .. |badge3| image:: https://img.shields.io/badge/github-dhongu%2Fl10n--czechia-lightgray.png?logo=github
-    :target: https://github.com/dhongu/l10n-czechia/tree/19.0/l10n_cz_zip
+    :target: https://github.com/dhongu/l10n-czechia/tree/20.0/l10n_cz_zip
     :alt: dhongu/l10n-czechia
 
 |badge1| |badge2| |badge3|
@@ -54,19 +54,54 @@ code.
 Usage
 =====
 
-1. Open *Contacts → Configuration → Localities* (developer mode) and
-   filter on a postal code: the Czech localities of that postal code are
-   listed with their region.
+1. As an administrator, open **Contacts → Configuration → Localization →
+   Cities** and search for a postal code: the Czech localities of that
+   postal code are listed with their region.
+
+   |Cities list filtered on the postal code 101 00: the localities
+   Michle, Praha 10-Michle, Praha 10-Vinohrady, all of the state Hlavní
+   město Praha (CZ)|
+
 2. Open a Czech contact and type the postal code in the address: the
    city and the region are filled in.
+
+   |Contact in Czechia: the postal code 252 63 fills in the city Roztoky
+   and the state Středočeský kraj (CZ)|
+
 3. When the postal code is shared by several localities, only the region
    is filled in; choose the city from the list (type the postal code or
    the name in the city field).
-4. To fix the existing contacts, select them in the contacts list and
-   use *Actions → Czechia: set city from ZIP*.
+
+   |Contact in Czechia: the postal code 101 00 fills in the state Hlavní
+   město Praha (CZ); the city field lists the localities of 101 00|
+
+4. To complete existing or imported contacts, select them in the list
+   and run *Actions → Czechia: set city from ZIP*.
+
+   |Contacts list with Czech contacts selected and the Actions menu open
+   on Czechia: set city from ZIP|
+
+   |Contact Customer Michle after the action: ZIP 101 00, city Michle
+   (101 00) and state Hlavní město Praha (CZ)|
+
+.. |Cities list filtered on the postal code 101 00: the localities Michle, Praha 10-Michle, Praha 10-Vinohrady, all of the state Hlavní město Praha (CZ)| image:: https://raw.githubusercontent.com/dhongu/l10n-czechia/20.0/l10n_cz_zip/static/description/en/01_lista_localitati_cap.png
+.. |Contact in Czechia: the postal code 252 63 fills in the city Roztoky and the state Středočeský kraj (CZ)| image:: https://raw.githubusercontent.com/dhongu/l10n-czechia/20.0/l10n_cz_zip/static/description/en/02_partener_cap_unic.png
+.. |Contact in Czechia: the postal code 101 00 fills in the state Hlavní město Praha (CZ); the city field lists the localities of 101 00| image:: https://raw.githubusercontent.com/dhongu/l10n-czechia/20.0/l10n_cz_zip/static/description/en/03_partener_cap_comun.png
+.. |Contacts list with Czech contacts selected and the Actions menu open on Czechia: set city from ZIP| image:: https://raw.githubusercontent.com/dhongu/l10n-czechia/20.0/l10n_cz_zip/static/description/en/04_actiune_contacte_existente.png
+.. |Contact Customer Michle after the action: ZIP 101 00, city Michle (101 00) and state Hlavní město Praha (CZ)| image:: https://raw.githubusercontent.com/dhongu/l10n-czechia/20.0/l10n_cz_zip/static/description/en/05_contact_dupa_actiune.png
 
 Changelog
 =========
+
+20.0.1.0.0 (2026-11-16)
+-----------------------
+
+**Changed**
+
+- Migration to Odoo 20: the PostgreSQL codes to retry are defined in the
+  module (``odoo.service.model.PG_CONCURRENCY_ERRORS_TO_RETRY`` was
+  removed) and the relink position uses ``ir.config_parameter``
+  ``get_int`` / ``set_int``.
 
 19.0.1.0.0 (2026-11-16)
 -----------------------
@@ -76,6 +111,8 @@ Changelog
 - Czech localities with postal code and region, from GeoNames.
 - City and region filled in from the postal code on Czech addresses;
   action and scheduled action to link the existing contacts.
+- Consultant sheet (readme/FISA_CONSULTANT.md) and screenshots, in
+  English.
 
 Bug Tracker
 ===========
@@ -104,6 +141,6 @@ Current maintainer:
 
 |maintainer-dhongu| 
 
-This module is part of the `dhongu/l10n-czechia <https://github.com/dhongu/l10n-czechia/tree/19.0/l10n_cz_zip>`_ project on GitHub.
+This module is part of the `dhongu/l10n-czechia <https://github.com/dhongu/l10n-czechia/tree/20.0/l10n_cz_zip>`_ project on GitHub.
 
 You are welcome to contribute.
