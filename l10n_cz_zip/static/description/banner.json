@@ -6,5 +6,6 @@
     "Czech localities with PSČ from GeoNames",
     "City and region from the ZIP",
     "Regions (kraj) loaded with the data"
-  ]
+  ],
+  "flag": "cz"
 }
