@@ -1,0 +1,10 @@
+{
+  "title": "Czechia - City from ZIP",
+  "summary": "City and region from the Czech postal code",
+  "edition": "community",
+  "features": [
+    "Czech localities with PSČ from GeoNames",
+    "City and region from the ZIP",
+    "Regions (kraj) loaded with the data"
+  ]
+}
